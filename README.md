@@ -1,9 +1,9 @@
 **Planet Shirt**  
 
 Integrantes:  
-Eduardo  
-Renan  
-Roberval  
+Eduardo Henrique Sousa Moraes  
+Renan Diogo de Souza (Dom)  
+Roberval Dionisio Pereira Filho  
 
 **Link do surge:**  
-https://certain-wind.surge.sh/  
+https://hateful-bell.surge.sh/
