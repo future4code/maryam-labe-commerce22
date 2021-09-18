@@ -8,6 +8,15 @@ const InfoProduto = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
+padding: 10px;
+h2{
+    margin: 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
+h4{
+    margin: 0;
+}
 `
 const PrecoEBotao = styled.div`
 display: flex;
@@ -18,7 +27,7 @@ const Botao = styled.button`
 margin-left: 40px;
 `
 const Foto = styled.img`
-width: 300px;
+width: 100%;
 `
 
 export class Home extends React.Component{
@@ -31,7 +40,8 @@ export class Home extends React.Component{
                     <h2>{produto.name}</h2>
                     <PrecoEBotao>
                     <h4>Preço: R${produto.price},00</h4>
-                    <Botao>add ao carrinho</Botao>
+                    
+                    <Botao onClick={() => this.props.addProdutoNoCarrinho(produto.id) }>add ao carrinho</Botao> 
                     </PrecoEBotao>
                 </InfoProduto>
             </CardProdutos>

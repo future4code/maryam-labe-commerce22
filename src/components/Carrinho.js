@@ -1,14 +1,27 @@
 import React from "react";
+import { CarrinhoCart } from "./CarrinhoCart";
 import styled from "styled-components";
+
+ const InfoCartCarrinho = styled.div`
+ display: grid;
+ grid-auto-flow: column;
+ gap: 4px;
+ align-items: center;
+ p{
+ margin: 0;
+ }
+ `
  
 export class Carrinho extends React.Component{
     render(){
         return(
-            <div>
-                <h1>Carrinho</h1>
-                <p>2x{this.props.quatity} camiseta_jupiter{this.props.name} <button>remover</button></p>
-                <p>Valor total:R${this.props.soma}200,00</p>
-            </div>
+           
+            <InfoCartCarrinho>
+                <p>{this.props.itemCard.quantity}x </p>
+                <p>{this.props.itemCard.name}</p>
+                <button onClick={()=> this.props.removerProdutoDoCarrinho(this.props.itemCard.id)}>Remover</button>
+            </InfoCartCarrinho>
+          
         )
     }
 }
