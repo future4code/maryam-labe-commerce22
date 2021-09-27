@@ -1,6 +1,6 @@
 **Planet Shirt**  
 
-Integrantes:  
+integrantes:  
 Eduardo Henrique Sousa Moraes  
 Renan Diogo de Souza (Dom)  
 Roberval Dionisio Pereira Filho  
